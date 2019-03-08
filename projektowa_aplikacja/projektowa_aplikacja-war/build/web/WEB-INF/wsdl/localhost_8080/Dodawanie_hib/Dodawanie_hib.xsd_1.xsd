@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://sop/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sop/">
+
+<xs:element name="SetId" type="tns:SetId"/>
+
+<xs:element name="getDate" type="tns:getDate"/>
+
+<xs:element name="getDateResponse" type="tns:getDateResponse"/>
+
+<xs:element name="getFileName" type="tns:getFileName"/>
+
+<xs:element name="getFileNameResponse" type="tns:getFileNameResponse"/>
+
+<xs:element name="getName" type="tns:getName"/>
+
+<xs:element name="getNameResponse" type="tns:getNameResponse"/>
+
+<xs:element name="getPath" type="tns:getPath"/>
+
+<xs:element name="getPathResponse" type="tns:getPathResponse"/>
+
+<xs:element name="getid" type="tns:getid"/>
+
+<xs:element name="getidResponse" type="tns:getidResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="setDate" type="tns:setDate"/>
+
+<xs:element name="setFileName" type="tns:setFileName"/>
+
+<xs:element name="setFirstName" type="tns:setFirstName"/>
+
+<xs:element name="setParamAll" type="tns:setParamAll"/>
+
+<xs:element name="setPath" type="tns:setPath"/>
+
+<xs:complexType name="SetId">
+<xs:sequence>
+<xs:element name="id" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFileName">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFileNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPath">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPathResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setDate">
+<xs:sequence>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setPath">
+<xs:sequence>
+<xs:element name="path" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getid">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getidResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setFirstName">
+<xs:sequence>
+<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setFileName">
+<xs:sequence>
+<xs:element name="filename" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setParamAll">
+<xs:sequence>
+<xs:element name="id" type="xs:long"/>
+<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+<xs:element name="filename" type="xs:string" minOccurs="0"/>
+<xs:element name="path" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getName">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

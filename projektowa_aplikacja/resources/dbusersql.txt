@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Users] (
+    [Id]              INT            IDENTITY (1, 1) NOT NULL,
+    [Imie]            NVARCHAR (MAX) NOT NULL,
+    [Nazwisko]        NVARCHAR (MAX) NOT NULL,
+    [data urodzenia ] NVARCHAR (MAX) NOT NULL,
+    [administrator]   BIT            DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
